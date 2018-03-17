@@ -9,9 +9,9 @@ module.exports = function () {
     ],
 
     scripts : [
-      'js/query.slim.min.js',
-      'js/query.popper.min.js',
-      'js/query.bootstrap.min.js'
+      './js/jquery.slim.min.js',
+      './js/popper.min.js',
+      './js/bootstrap.min.js'
     ],
     
     platform : {
