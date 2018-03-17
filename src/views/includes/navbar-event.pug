@@ -1,0 +1,14 @@
+nav.navbar.navbar-expand-md.navbar-light.cf-navbar-event
+  a.navbar-brand(href='#') #{event.title}
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#collapsibleNavEvent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  div#collapsibleNavEvent.collapse.navbar-collapse
+    ul.navbar-nav.ml-auto
+      each item in event.pages
+        if item.display
+          if item.file == activeEvent
+            li.nav-item.active
+              a.nav-link(href=item.file) #{item.title}
+          else
+            li.nav-item
+              a.nav-link(href=item.file) #{item.title}

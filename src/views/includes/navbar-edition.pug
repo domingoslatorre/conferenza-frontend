@@ -1,0 +1,13 @@
+nav.navbar.navbar-expand-md.navbar-light.cf-navbar-edition
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#collapsibleNavEdition', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #collapsibleNavEdition.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      each item in edition.pages
+        if item.display
+          if item.file == current
+            li.nav-item.active
+              a.nav-link(href=item.file) #{item.title}
+          else
+            li.nav-item
+              a.nav-link(href=item.file) #{item.title}

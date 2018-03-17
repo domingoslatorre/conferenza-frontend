@@ -1,0 +1,17 @@
+include mixin
+
+block vars
+
+doctype html
+html(lang='pt-br')
+  include head
+  body
+    include navbar-event
+    include header-edition
+    include navbar-edition
+    block content
+    block foot
+    block scripts
+      for link in scripts
+        script(src=link)
+    include footer
