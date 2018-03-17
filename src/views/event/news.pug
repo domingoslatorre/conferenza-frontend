@@ -1,0 +1,13 @@
+extends ../includes/master-event
+
+block vars
+  - var activeEvent = event.pages.news.file
+
+block header
+  +event-header(event.pages.news)
+
+block content
+  div(class='container cf-main')
+    .row
+      .col
+        h1.cf-title-1 #{event.pages.news.title}
