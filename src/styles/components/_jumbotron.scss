@@ -1,0 +1,32 @@
+.jumbotron {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 4rem 2rem;
+    background-color: #000;
+    background-image: url('../../img/background.jpeg');
+    background-size: cover;
+
+    .h2 {
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .h2, .lead {
+        margin-bottom: 0;
+        color: #FFF;
+    } 
+
+    hr {
+        border: 1px solid #fff;
+        max-width: 8rem;
+        margin: 1rem 0;
+    }
+
+    .btn, .btn:hover {
+        text-transform: uppercase;
+        margin-top:0.3rem;
+        border: 0;
+        border:2px solid #fffbdf;
+    }
+}

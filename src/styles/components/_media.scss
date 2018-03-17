@@ -1,0 +1,49 @@
+.cf-media {
+
+    border-bottom: 1px dashed #666;
+    padding: 1.5rem 0.5rem;
+
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10%;
+       
+    }
+
+    img:hover {
+
+    }
+
+    .media-body {
+        margin-left: 1rem;
+    }
+
+    .cf-media-info {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+        color: $gray-light;
+    }
+    
+    .cf-media-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: $text-color;
+        margin: 0.1rem 0 0.25rem 0;
+        padding: 0;
+    }
+
+    a > .cf-media-title {
+        text-decoration: none;
+    }
+
+    .cf-media-text {
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+.cf-media:hover {
+    background-color: $color-primary-light;
+}

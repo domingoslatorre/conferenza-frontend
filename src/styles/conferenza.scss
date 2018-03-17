@@ -1,0 +1,90 @@
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1250px
+);
+
+$container-max-widths: (
+  sm: 600px,
+  md: 800px,
+  lg: 1100px,
+  xl: 1250px
+);
+
+$body-bg: #fff;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "components/colors";
+@import "components/badge";
+@import "components/navbar";
+@import "components/jumbotron";
+@import "components/media";
+
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.cf-main {
+    padding-top: 50px;
+}
+
+.cf-title-1 {
+    font-size: 2rem;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 3px solid #333;
+    text-transform: uppercase;
+    padding-bottom: 0.3rem;
+}
+
+.cf-title-2 {
+    font-size: 1.3rem;
+    color: #000;
+    border-bottom: 2px solid #333;
+    text-transform: uppercase;
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+
+    i {
+        margin-right: 0.3rem;
+        padding-left: 0.2rem;
+        font-size: 95%;
+    }
+}
+
+
+.cf-btn-primary {
+    color: #000;
+    font-weight: bold;
+    background-color: $color-primary;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0rem;
+    border: 2px solid #fff;
+}
+
+.cf-btn-primary:hover {
+    background-color: #ffee00;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #000;
+}
+
+.cf-edition-header {
+    padding: 2rem 2rem;
+}
+
+.cf-footer {
+    background-color: $color-primary-light;
+    margin-top: 4rem;
+    padding: 3rem 5rem;
+}

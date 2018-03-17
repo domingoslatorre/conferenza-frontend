@@ -1,0 +1,61 @@
+
+// Bootstrap navbar
+
+.navbar {
+   
+}
+
+// Event navbar
+
+.cf-navbar-event {
+    background-color: $navbar-event-bg-color;
+    border-bottom: 3px solid #cab629;
+    padding: 1.3rem 1rem;
+
+    
+   
+    .navbar-brand {
+        font-weight: bold;
+        color: #000 !important;
+    }
+
+    .nav-link {
+        color: $navbar-event-color !important;
+        text-transform: uppercase;
+    }
+
+    .active > .nav-link {
+        color: $navbar-event-active-color !important;
+        font-weight: bold;
+        
+    }
+
+}
+
+
+
+// Edition navbar
+
+.cf-navbar-edition {
+    padding: 0.4rem 2rem 0 2rem;
+    background-color: $navbar-edition-bg-color;
+    
+   
+    .nav-link {
+        color: $navbar-edition-color !important;
+        padding: 1rem 0;
+        text-transform: uppercase;
+    }
+
+    .nav-link:hover, .nav-link:focus {
+        color: $navbar-edition-color !important;
+    }
+
+    .active > .nav-link {
+        color: $navbar-edition-active-color !important;
+        font-weight: bold;
+        border-bottom: 3px solid #000;
+    }
+
+    
+}
