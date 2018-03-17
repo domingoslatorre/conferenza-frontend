@@ -1,0 +1,10 @@
+extends ../includes/master-edition
+
+block vars
+  - var current = edition.pages.tracks.file
+
+block content
+  div(class='container cf-main')
+    .row
+      .col
+        h1.cf-title-1 #{edition.pages.tracks.title}
